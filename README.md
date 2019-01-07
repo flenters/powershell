@@ -8,4 +8,4 @@ archive-reports.ps1 - This script will archive a folder to a new folder with tod
 
 test-ports-win10.ps1 - Specify multiple hosts and ports to test connectivity
 
-basic-ssh.ps1 - 
+basic-ssh.ps1 - Connect to remote SSH box and run commands
