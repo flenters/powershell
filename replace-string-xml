@@ -1,0 +1,16 @@
+#Path to xml file
+$webConfigFile = 'C:\API_Test\hibernate.cfg.xml'
+$newString = "new string"
+#Reads the xml data
+$doc = [xml](Get-Content $webConfigFile)
+#specific string within array
+$connString = $doc.'hibernate-configuration'.'session-factory'.property.'#text'[3]
+#$connString = $doc.configuration.connectionStrings.add.connectionString;
+$lookFor = 'Password='
+$idx = $connString.IndexOf($lookFor);
+$newConnString = $connString.Substring(0, $idx + $lookFor.Length)
+#set new connection string
+$newConnString = $newConnString + $String
+$doc.'hibernate-configuration'.'session-factory'.property[3].'#text' = $newConnString
+#save the file
+$doc.Save('C:\API_Test\hibernate.cfg.xml')
