@@ -1,6 +1,6 @@
 # Powershell
 
-Here you will find varios scripts for automation and just general stuff
+Here you will find various scripts for automation and just general stuff
 
 get-user-data.ps1 - This will get all group members from a username on AD
 
