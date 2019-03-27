@@ -13,3 +13,5 @@ basic-ssh.ps1 - Connect to remote SSH box and run commands
 replace-string.sp1 - Replace a string after a specific word using reg ex
 
 search-string.ps1 - Search for a specific string within a folder and file recursively
+
+replace-string-xml - Replaces a string within an xml array searching for a specific keyword
