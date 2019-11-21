@@ -21,3 +21,5 @@ adv-search-replace.ps1 - Replace a string after a specified string
 account_locked.ps1 - Check if a AD account is locked
 
 Listen-Port.ps1 - Open/Listen on a local port 
+
+get-users-from-group.ps1 - check AD users in AD group
