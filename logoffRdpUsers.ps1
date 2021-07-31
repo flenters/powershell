@@ -7,7 +7,7 @@ quser | Select-Object -Skip 1 | ForEach-Object {
         $id = ($_ -split ' +')[-6]
         $rdpUser = ($_ -split ' +')[-8]
         #send message to all users
-        msg $id "You are about the be logged out of ACBS in 1 minute this is required for EOD"
+        msg $id "You are about the be logged out of ApplicationsName in 1 minute"
         }
 
         Start-Sleep -Seconds 60 
@@ -16,7 +16,7 @@ quser | Select-Object -Skip 1 | ForEach-Object {
         $ids = ($_ -split ' +')[-6]
        foreach ($id in $ids){
         $username = ($_ -split ' +')[-8]
-        #the below us the username you dont want to log of you can add more users in the if
+        #the below is the username you dont want to log of you can add more users in the if
         if ($username -eq "username"){
             write-host "The following users will not be logged off $username and session ID $id"
         }else {
